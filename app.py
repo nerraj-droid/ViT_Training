@@ -21,7 +21,7 @@ def predict():
         filename = file.filename
         filepath = os.path.join(UPLOAD_FOLDER, filename)
         file.save(filepath)
-        path = "./out/MyKvasirV2Model/20_2023-03-01-14-45-39/model"
+        path = "./out/MyKvasirV2Model/20_2023-03-01-14-45-39/model" #replace to the path of model
         model = ViTForImageClassification.from_pretrained(path)
         feature_extractor = ViTImageProcessor.from_pretrained(path)
         classifier = VisionClassifierInference(

@@ -49,7 +49,7 @@ trainer = VisionClassifierTrainer(
 # sn.heatmap(df_cm, annot=True, annot_kws={"size": 8}, fmt="")
 # plt.savefig("./imgs/conf_matrix_1.jpg")
 
-path = "./out/MyKvasirV2Model/20_2023-03-01-14-45-39/model"
+path = "./out/MyKvasirV2Model/20_2023-03-01-14-45-39/model" #choose path generated
 img = "mango_diseases/Healthy/20211231_123105 (Custom).jpg"  # sample image path to test
 model = ViTForImageClassification.from_pretrained(path)
 feature_extractor = ViTImageProcessor.from_pretrained(path)
