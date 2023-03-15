@@ -1,4 +1,4 @@
-# VissionTransformer_Training
+# VisionTransformer_Training
  utilizing HuggingFace Model With Flutter Mobile App
 
 1. Create virtualenv
