@@ -1,10 +1,7 @@
 from hugsvision.dataio.VisionDataset import VisionDataset
 from hugsvision.nnet.VisionClassifierTrainer import VisionClassifierTrainer
 from transformers import ViTFeatureExtractor, ViTForImageClassification, ViTImageProcessor
-# import pandas as pd
-# import seaborn as sn
-# import matplotlib.pyplot as plt
-# from sklearn.metrics import confusion_matrix
+
 from hugsvision.inference.VisionClassifierInference import VisionClassifierInference
 
 data_dir = 'mango_diseases'
@@ -38,16 +35,6 @@ trainer = VisionClassifierTrainer(
         huggingface_model,
     ),
 )
-# print('---------------------THE OUTPUT IS ------------------------------')
-# ref, hyp = trainer.evaluate_f1_score()
-# print('---------------------CONFUSION MATRIX ------------------------------')
-# cm = confusion_matrix(ref, hyp)
-# labels = list(label2id.keys())
-# df_cm = pd.DataFrame(cm, index=labels, columns=labels)
-#
-# plt.figure(figsize=(10, 7))
-# sn.heatmap(df_cm, annot=True, annot_kws={"size": 8}, fmt="")
-# plt.savefig("./imgs/conf_matrix_1.jpg")
 
 path = "./out/MyKvasirV2Model/20_2023-03-01-14-45-39/model" #choose path generated
 img = "mango_diseases/Healthy/20211231_123105 (Custom).jpg"  # sample image path to test
