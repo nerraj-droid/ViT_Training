@@ -75,3 +75,5 @@ def predict():
 
         result = predict_mango_disease(filepath, model_path)
     return result
+
+
